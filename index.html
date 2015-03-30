@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.css">
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/flat-ui.min.css">
+    <link rel="stylesheet" href="static/css/demo.css">
+  </head>
+  <body>
+    <div id="doctor-login">
+      <div class="modal fade" id="doctor-login-modal" tabindex="-1" role="dialog" aria-labelledby="doctor-login-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="doctor-login-label">医生登录</h4>
+            </div>
+            <div class="modal-body">
+              <form id="login-form" action="">
+                <div class="input-group">
+                  <span class="input-group-addon">登录ID</span>
+                  <input type="text" name="doctorID" class="form-control" placeholder="医生登录ID" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon">密码</span>
+                  <input type="password" name="password" class="form-control" placeholder="医生登录密码" />
+                </div>
+                <p id="login-form-message"></p>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="login-button">登 录</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="element-string">
+      <div class="modal fade " id="element-string-modal" tabindex="-1" role="dialog" aria-labelledby="element-string-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="element-string-label"></h4>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="text" name="value" class="form-control" placeholder="数据元内容" />
+                </div>
+                <p class="error-message"></p>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger element-cancel">取消</button>
+              <button type="button" class="btn btn-primary element-submit">确认</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="element-list">
+      <div class="modal fade" id="element-list-modal" tabindex="-1" role="dialog" aria-labelledby="element-list-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="element-list-label"></h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger element-cancel">取消</button>
+              <button type="button" class="btn btn-primary element-submit">确认</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="element-range">
+      <div class="modal fade" id="element-range-modal" tabindex="-1" role="dialog" aria-labelledby="element-range-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="element-range-label"></h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger element-cancel">取消</button>
+              <button type="button" class="btn btn-primary element-submit">确认</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="element-date">
+      <div class="modal fade" id="element-date-modal" tabindex="-1" role="dialog" aria-labelledby="element-date-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="element-date-label"></h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger element-cancel">取消</button>
+              <button type="button" class="btn btn-primary element-submit">确认</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="element-search">
+      <div class="modal fade" id="element-search-modal" tabindex="-1" role="dialog" aria-labelledby="element-search-label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="element-search-label"></h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger element-cancel">取消</button>
+              <button type="button" class="btn btn-primary element-submit">确认</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="nav navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <a class="navbar-brand disable-click" id="index-button" href="#">医生诊疗</a>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-collapse-01">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="disable-click" id="patients-button" href="#">
+              就诊病人
+              <span class="navbar-new">3</span>
+            </a>
+          </li>
+          <li>
+            <a class="disable-click" id="pills-button" href="#">用药库</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section id="doctor-body">
+      <div id="doctor-patients" class="start-hidden">
+        <div class="panel panel-primary">
+          <div class="panel-heading">就诊病人</div>
+          <div class="panel-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>病人姓名</th>
+                  <th>挂号时间</th>
+                  <th>就诊</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>张三</td>
+                  <td>2014-01-01 18:00:00</td>
+                  <td><button class="btn btn-sm btn-primary diagnose-button">进入</button></td>
+                </tr>
+                <tr>
+                  <td>李四</td>
+                  <td>2014-01-01 18:00:01</td>
+                  <td><button class="btn btn-sm btn-primary diagnose-button">进入</button></td>
+                </tr>
+                <tr>
+                  <td>方滨兴</td>
+                  <td>2002-05-17 18:00:01</td>
+                  <td><button class="btn btn-sm btn-primary diagnose-button">进入</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="doctor-pills" class="start-hidden">
+        <div class="panel panel-primary">
+          <div class="panel-heading">用药库</div>
+          <div class="panel-body">
+            *******
+          </div>
+        </div>
+      </div>
+      <div id="doctor-diagnose" class="start-hidden">
+        <div class="panel panel-primary">
+          <div class="panel-heading"><span id="diagnoseName"></span> 的诊疗</div>
+          <div class="panel-body">
+            <div class="tagsinput-primary">
+              <p>已填数据元:</p>
+              <input name="tagsinput" id="elements-tags" class="tagsinput" data-role="tagsinput" value="">
+            </div>
+            <div class="multi-form"><form></form></div>
+            <div class="multi-form"><form></form></div>
+            <div class="multi-form"><form></form></div>
+            <div class="multi-form"><form></form></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js"></script>
+    <script src="bower_components/flat-ui/js/radiocheck.js"></script>
+    <script src="static/js/sha1.js"></script>
+    <script src="static/js/demo.js"></script>
+  </body>
+</html>

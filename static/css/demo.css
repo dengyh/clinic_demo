@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+#doctor-login-modal .modal-dialog,
+#element-string-modal .modal-dialog,
+#element-date-modal .modal-dialog,
+#element-list-modal .modal-dialog,
+#element-range-modal .modal-dialog,
+#element-search-modal .modal-dialog {
+  margin-top: 20%;
+}
+
+#doctor-login-modal #login-form .input-group {
+  margin-bottom: 15px;
+}
+
+#doctor-login-modal #login-button {
+  width: 16%;
+}
+
+#doctor-login-modal #login-form #login-form-message {
+  color: rgb(217,81,79);
+  margin-left: 10px;
+}
+
+#doctor-body {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+#doctor-body .start-hidden {
+  display: none;
+}
+
+.panel,
+.panel .panel-heading {
+  border-color: rgb(52,73,94);
+}
+
+.panel .panel-heading {
+  background-color: rgb(52,73,94);
+}
+
+.multi-form {
+  width: 24%;
+  float: left;
+  margin-left: 1%;
+}
+
+.multi-form form button {
+  display: block;
+  margin: 2px auto;
+}
+
+.error-message {
+  color: rgb(217,81,79);
+  margin-left: 10px;
+}
